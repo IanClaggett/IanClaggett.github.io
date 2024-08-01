@@ -1,1 +1,3 @@
-# Ian Claggett, senior software engineering student
+# Ian Claggettt
+## Senior Software Engineering student
+### The Ohio State University

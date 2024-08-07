@@ -2742,6 +2742,16 @@ input[type="button"]:disabled,
 	color: inherit;
 }
 
+#nav-links{
+	color: rgba(255, 255, 255, 0.4);
+	font-size: 1em;
+	position:absolute;
+	top:0.4em;
+	right:2em;
+}
+#nav-links a{
+	color:inherit;
+}
 /* Main */
 
 #main {
@@ -2749,6 +2759,7 @@ input[type="button"]:disabled,
 	max-width: 54em;
 	padding: 8em 4em 4em 4em;
 	width: calc(100% - 35%);
+	display:none;
 }
 
 #main>section {

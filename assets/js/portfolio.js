@@ -2,16 +2,34 @@ $(document).ready(function () {
 
     //Animating the slide down
     $("#header").hide();
+    $("#footer").hide();
+    $("#main").hide();
     $("#header").slideDown("slow");
+    $("#footer").slideDown("slow");
+    $("#main").fadeIn("slow");
 
-    //Animating the transition to index
-    $(".image > img:nth-child(1)").click(function () {
+    //Animating the nav links
+    $("#nav-links > a:nth-child(1)").click(function () {
         $("#main").fadeOut("slow");
-        $("#header").slideUp("slow", function () {
+        $("#header").animate({left: '-600px'},"slow", function () {
             window.location.replace("/");
         });
     })
 
+    $("#nav-links > a:nth-child(2)").click(function () {
+        $("#main").fadeOut("slow");
+        $("#header").animate({left: '-600px'},"slow", function () {
+            window.location.replace("portfolio");
+        });
+    })
+
+    $("#nav-links > a:nth-child(3)").click(function () {
+        $("#main").fadeOut("slow");
+        $("#header").animate({left: '-600px'},"slow", function () {
+            window.location.replace("resume");
+        });
+    })
+    
     //Animating the transition to portfolio
     $(".actions > li:nth-child(1)").click(function () {
         $("#one").fadeOut("slow");

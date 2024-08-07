@@ -4,6 +4,7 @@ $(document).ready(function () {
     $("#header").hide();
     $("#header").slideDown("slow");
 
+    //Animating the transition to index
     $(".image > img:nth-child(1)").click(function () {
         $("#main").fadeOut("slow");
         $("#header").slideUp("slow", function () {
@@ -14,8 +15,16 @@ $(document).ready(function () {
     //Animating the transition to portfolio
     $(".actions > li:nth-child(1)").click(function () {
         $("#one").fadeOut("slow");
-        $("#header").slideUp("slow", function () {
+        $("#header").animate({left: '-600px'},"slow", function () {
             window.location.replace("portfolio");
+        });
+    })
+
+    //Animating the transition to resume
+    $(".actions > li:nth-child(2)").click(function () {
+        $("#one").fadeOut("slow");
+        $("#header").animate({left: '-600px'},"slow", function () {
+            window.location.replace("resume");
         });
     })
 

@@ -1934,6 +1934,11 @@ header.major h2 {
 	text-align: center;
 }
 
+.subtitle{
+	text-align: center;
+	color: #888888;
+	font-size: 1em;
+}
 /* Form */
 
 form {
@@ -2705,6 +2710,7 @@ input[type="button"]:disabled,
 	padding: 0 4em 6em 0;
 	position: fixed;
 	text-align: right;
+	display: none;
 	width: 35%;
 }
 
